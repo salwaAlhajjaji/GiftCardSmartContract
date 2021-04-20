@@ -160,9 +160,10 @@ footer .column i+i {
 
 
 form {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+   
     margin: 0 auto;
+    padding-top: 25vmax;
+    padding-bottom: 10vmax;
 
 }
 
@@ -204,6 +205,12 @@ input:focus::-webkit-input-placeholder {
     width: 20%;
     margin: 0 auto;
 
+}
+
+.rowlower{
+
+    padding-bottom: 10vmax;
+    padding-top: -10vmax;
 }
 
 .btn:focus {
@@ -258,36 +265,24 @@ input:focus::-webkit-input-placeholder {
     position: relative;
     background-color: white;
     justify-content: center;
+              font-family: "Rubik",
+              sans-serif;
+
 
 }
 
-/*
-   .container .image{
-     margin: 0 auto;
-     position: absolute;
-     right: 734px;
-     top: 20px;
-     width: 55px;
-   }
-  .image .cornerimage {
-       width: 700px;
-       margin: 0 auto;
-
-   }
-   */
-
-/*
-   .container .image {
-    top: -2px;
-    position: relative;
-  
-   }
-*/
 
 .image .cornerimage {
     margin: 0 auto;
     position: absolute;
-    right: 316px;
+    right: 370px;
+    top: 100px;
+
+}
+
+.image .cornerimage1 {
+    position: absolute;
     top: -1px;
+    right: 250px;
 
 }

@@ -24,6 +24,9 @@ header a {
     font-size: 0.9em;
     color: whitesmoke;
 }
+header{
+    font-family: var(--Sniglet-font);
+}
 
 /*choices*/
 .dropdown-content {
@@ -160,9 +163,10 @@ footer .column i+i {
 
 
 form {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin: 0 auto;
+ padding-top: 25vmax;
+ padding-bottom: 10vmax;
+ margin: 0 auto;
+ font-family: "Rubik",sans-serif;
 
 }
 
@@ -174,7 +178,10 @@ input {
     margin-bottom: 1vh;
     outline: none;
     width: 60%;
-    background-color: rgb(247, 247, 247)
+    background-color: rgb(247, 247, 247);
+    font-family: var(--Sniglet-font);
+
+
 }
 
 input:focus::-webkit-input-placeholder {
@@ -199,11 +206,24 @@ input:focus::-webkit-input-placeholder {
     font-size: 0.7rem;
     margin: 4vh 0 1.5vh 0;
     padding: 1.5vh;
-    border-radius: 0;
+    border-radius: 4;
     padding: 1vh;
     width: 20%;
     margin: 0 auto;
+    font-family: var(--Sniglet-font);
 
+
+
+}
+
+.rowlower {
+
+    padding-bottom: 5vmax;
+    position: relative;
+    right: 10px;
+    top: -80px;
+
+    
 }
 
 .btn:focus {
@@ -260,35 +280,31 @@ margin: 0 auto;
        justify-content: center;
        
    }
-/*
-   .container .image{
-     margin: 0 auto;
-     position: absolute;
-     right: 734px;
-     top: 20px;
-     width: 55px;
-   }
+   .image{
+    margin-bottom: 350px;
+  }
+
   .image .cornerimage {
-       width: 700px;
-       margin: 0 auto;
+      margin: 0 auto;
+      position: absolute;
+      right: 370px;
+      top: 100px;
 
-   }
-   */
-   
-   /*
-   .container .image {
-    top: -2px;
-    position: relative;
+  }
+
+  .image .cornerimage1 {
+      position: absolute;
+      top: -1px;
+      right: 250px;
+
+  }
+ 
   
-   }
-*/
+ 
 
-   .image .cornerimage {
-    margin: 0 auto;
-    position: absolute;
-    right: 316px;
-    top: -1px;
-
-   }
+  .h4{
+          font-family: "Rubik",sans-serif;
+          text-align: left;
+  }
 
    

@@ -13,10 +13,8 @@
     crossorigin="anonymous">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="../css/buy-page.css">
-    <link rel="stylesheet" href="../homepage-style.css">
-    <link rel="stylesheet" href="../Buy-page.html">
-
-
+    <link rel="stylesheet" href="./homepage-style.css">
+    <link rel="stylesheet" href="./Buy-page.html">
 </head>
 
 <body>
@@ -37,9 +35,18 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
+            
+           <li class="nav-item dropdown">
+             <div class="dropdown">
               <a class="nav-link" href="Buy-page.html">Buy Gift Card</a>
+            <div class="dropdown-content">
+                  <a href="add.html">Add</a>
+                  <a href="transfer.html">Transfer</a>
+                  <a href="redeem.html">Redeem</a>
+                </div>
+                </div>
             </li>
+            
             <li class="nav-item dropdown">
               <div class="dropdown">
              <a class="nav-link" href="how.html">For Customers</a>
@@ -70,29 +77,16 @@
                    
                     
                       <div class="image">
-                      <img src="https://uc57582f27c8e1fc9902ccbb12d5.previews.dropboxusercontent.com/p/thumb/ABLXtigSNwF3mdUM1yr3wSGPgi-jWhu4wBFiYwBMCCv6z26GoKL0LCn6ICyY0JY1etkIBmlAbr79jONbQccMPXoPqwFDNA6aRnsugqzWl2JJ-Q35u4GwMWGLLlbZAJigqFaIfxBSgQ0RpjwGe7DjvY4gUurSKunRpR4LzanUZ9-qV2aFpGKRq1X5JmCjlWd_lpNqLz0xw2792lmcFGRXYzxy4dQLoFotUlqwE3xyDrsCKS9xG9mAPqv6jixqp9kIwst3cDD2K2htyu1RI1o9y9VF_Z9xfl3ADS8WHU5MRYeZuieoTlob3VreivmXpxCchbMkRVobRq3zWEvGaHwO2imkI_gL46lULacExq13BPmtFCvpXymUDhg4izjsf7w88uIewpnr5gdbFxc2Iwu5rwpo/p.png?fv_content=true&size_mode=5" width="590" height="266"/> 
-                      <img class="cornerimage"  src="https://uc3bee80b1fbe693a2418dfc0c8d.previews.dropboxusercontent.com/p/thumb/ABL_9rs5D6DT7n05bGZLsT8OGNGYkk62dVB-erM8zCNMERUWXFH43JP9y4aYRuDdpID7waS9gwZkKdEdl1OhlvV5FxC1RJZB5h1HWEBQk-XNzJ2Pxyd1k0MmbsuChfYHHR7QwwKo_bq7qrn3x2UUrdU3p0sRz61eZfuYxncScIP20VyIZuFaz0Qri93qQSxCrxyZSxUGjidLdIPmC6YkChLMF63KrIzOm-pbNCfAvLYryR0-gCse2XwcOeKuW24F-_J8E3c3p2uj_pL4FHBYmdpEH9FMo-4MrwEglCEQANMOFLioYtxnlecE_sps89BZq1MMmWDWn-2xZZfRFIFyCpaTTN_6Mz9fUo8fOgiIauEmV3LxA3cEaOGQfzyfxdQI5jVGSYNFMJwzDh1g2_tHAeLE/p.png?fv_content=true&size_mode=5" width="430" height="280"/>
-
-                      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-                      
-                          
-                      <img src="../assets/Picture1.png" width="500" height="300"/>
-                      <img class="cornerimage" src="../assets/35-354386_calendar-semi-circle-shape-png.png"/>
-                       -->
+                      <img class="cornerimage1" src="../assets/35-354386_calendar-semi-circle-shape-png.png" width="590" height="280"/>
+                      <img class="cornerimage" src="../assets/Picture1.png" width="350" height="220"/>
                       </div>
+                      
                       <br>
-                      <p><h5>The total value you derived here will be the amount you'll<br>
-                        be receiving during the total transaction process<br>
+                      
+                      <p><h5>Issue your Gift Card, The amount value you enter here will be the amount you'll be 
+                        <br>receiving after the total transaction process<br>
                         ------------------------------------------------------------------
-                        <!-- <div>
-                         <h4>Amount</h4>
-                          <input id="amount" placeholder="Amount"/>
-                         <button onclick="App.GiftCardbBuyFee()">Buy Gift Card</button>
-                         <p id="owner">hh</p>
-                         <script src="index.js"></script>
-                       </div> -->
                       </h5></p>
-                      <!-- <span><h4>Wallet Address</h4></span><input id="walletAddress" placeholder="Wallet Address"/>  -->
                       <span><h4>Card Currency</h4></span> 
                       <select class="form-select" aria-label="Default select example">
                       <option selected>Card Currency</option>
@@ -110,21 +104,12 @@
 
                 
                 <button class="btn" onclick="App.GiftCardbBuyFee()"><h5>Buy</h5></button>
-                <!-- jjjjjjj -->
                 <br>
                 <br>
-                <span><h4>Add Amount</h4></span><input id="addAmount" placeholder="Add Amount"/> 
-                <button class="btn" onclick="App.GiftCardAddFee()"><h5>Add Funds</h5></button>
-                <!-- jjjjjjj -->
-                <span><h4>Withdraw Amount</h4></span><input id="withdrawAmount" placeholder="Withdraw Amount"/> 
-                <button class="btn" onclick="App.withdrawMerchantBalance()"><h5>Withdraw</h5></button>
-                <!-- hhhhhh -->
-                <span><h4>Transfer Address</h4></span><input id="walletAddress" placeholder="Wallet Address"/> 
-                <button class="btn" onclick="App.transferGiftCardTo()"><h5>Transfer</h5></button>
               </div>
             </div>
 
-                <p id="owner"></p>
+                <p id="msg"></p>
                 <br>
                 <br>
                 </div>
@@ -189,306 +174,10 @@ function calculate(){
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-<script src="./main.js"></script>
+<script src="main.js"></script>
 <script src="index.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<style>
-  @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 
-* {
-    box-sizing: border-box;
-}
-
-header,
-section {
-    overflow-x: hidden;
-}
-
-:root {
-    --Sniglet-font: "Sniglet", cursive;
-    --Rubik: "Rubik", cursive;
-    --Patua: "Patua One", cursive;
-    --Lobster: "lobster", cursive;
-    --light-black: #2e2c2caf;
-    --bggradient: linear-gradient(to bottom, #8171b9, #4b63a5);
-    --light-gray: rgba(255, 255, 255, 0.877);
-}
-
-header a {
-    font-family: var(--Sniglet-font);
-    font-size: 0.9em;
-    color: whitesmoke;
-}
-
-/*choices*/
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-header .nav-item:last-child {
-    padding-right: 10.5em;
-}
-
-header .nav-item {
-    padding: 0.9em;
-}
-
-header .navbar-brand {
-    padding-left: 8rem;
-}
-
-header .nav-link:hover {
-    color: black;
-}
-
-/*TEXT*/
-header .row .col-md-7 {
-    padding: 17vmin 1vmin;
-    padding-bottom: 20vmin;
-
-}
-
-header .row .col-md-5 {
-    padding: 4.2vmin 1vmin;
-}
-
-
-
-header {
-    background: #4b63a5;
-    /* fallback for old browsers */
-    background: var(--bggradient);
-}
-
-header .container .col-md-7 {
-    font-family: "Rubik", sans-serif;
-}
-
-header .container .col-md-7 h6 {
-    padding: 1vmin;
-    letter-spacing: 4px;
-}
-
-header .container .col-md-7 h1 {
-    font-size: 8.5vmin;
-    font-weight: bold;
-    padding: 0.1em 0em;
-}
-
-header .container .col-md-7 p {
-    padding: 1vmin 5vmin;
-}
-
-.primary-btn {
-    border-radius: 30px;
-    font-weight: bold;
-    box-shadow: 0px 2px 15px 0px rgba(5, 5, 5, 0.2);
-
-}
-
-
-
-footer {
-    background: rgba(0, 0, 0, 0.815);
-    overflow-x: hidden;
-    padding: 14vmin 18vmin;
-    padding-bottom: 0vmin;
-}
-
-footer p>span {
-    color: #ff512f;
-}
-
-footer input {
-    border: none !important;
-}
-
-footer input::placeholder {
-    color: white !important;
-}
-
-footer .input-group .input-group-text {
-    background: var(--bggradient);
-    border: none;
-}
-
-footer .column i {
-    color: #dd2476;
-}
-
-/* It is Adjacent sibling combinator */
-
-footer .column i+i {
-    padding: 0 0.5em;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.815);
-    z-index: 9999;
-    transition: all 1.5s ease;
-}
-
-/**************************************/
-
-
-form {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin: 0 auto;
-
-}
-
-
-/* inside the box*/
-input {
-    border: 1px solid rgba(0, 0, 0, 0.137);
-    padding: 1vh;
-    margin-bottom: 1vh;
-    outline: none;
-    width: 60%;
-    background-color: rgb(247, 247, 247)
-}
-
-input:focus::-webkit-input-placeholder {
-    color: transparent
-}
-
-.header {
-    font-size: 1.5rem
-}
-
-/*the left box*/
-
-.left {
-    text-align: center;
-}
-
-
-.btn {
-    background-color: #8171b9;
-    border-color: #8171b9;
-    color: black;
-    font-size: 0.7rem;
-    margin: 4vh 0 1.5vh 0;
-    padding: 1.5vh;
-    border-radius: 0;
-    padding: 1vh;
-    width: 20%;
-    margin: 0 auto;
-
-}
-
-.btn:focus {
-    box-shadow: none;
-    outline: none;
-    box-shadow: none;
-    color: black;
-    -webkit-box-shadow: none;
-    transition: none;
-    width: 20%;
-    margin: 0 auto;
-
-}
-
-.form-select{
- border: 1px solid rgba(0, 0, 0, 0.137);
- padding: 1vh;
- margin-bottom: 1vh;
- outline: none;
-text-align: center;
-width: 60%;
-background-color: rgb(247, 247, 247);
-margin: 0 auto;
-}
-
-.form-control{
-   margin: 0 auto;
-   width: 60%;
-   padding: 1vh;
-   margin-bottom: 3vh;
-}
-
-.form .btn {
-     width: 60%;
-     padding: 1vh;
-     margin: 0 auto;
-
-}
-
-.row .col-md-10 {
-
-   margin: 0 auto;
-   position: relative;
-   padding-bottom: 90px;
-   padding-top: 100px;
-
-   }
-
-   .container .card {
-       padding-top: 0px;
-       margin: 0 auto;
-       position: relative;
-       background-color:white;
-       justify-content: center;
-       
-   }
-/*
-   .container .image{
-     margin: 0 auto;
-     position: absolute;
-     right: 734px;
-     top: 20px;
-     width: 55px;
-   }
-  .image .cornerimage {
-       width: 700px;
-       margin: 0 auto;
-
-   }
-   */
-   
-   /*
-   .container .image {
-    top: -2px;
-    position: relative;
-  
-   }
-*/
-
-   .image .cornerimage {
-    margin: 0 auto;
-    position: absolute;
-    right: 316px;
-    top: -1px;
-
-   }
-
-   
-
-</style>
 </body>
 
 </html>

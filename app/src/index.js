@@ -3,8 +3,6 @@ import metaCoinArtifact from "../../build/contracts/GiftCard.json";
 
 const App = {
   web3: null,
-  // // account: "0x5c7eBF07a71eE513a2C329582C49e89348a52Aca",
-  // account: "0xAB6FaF35D8B604ED24bDbd8DeeAaf70e68d7Fb61",
   account:null,
   meta: null,
 
@@ -30,15 +28,9 @@ const App = {
   },
 
   GiftCardbBuyFee: async function() {
-  var status = document.getElementById("owner");
+  var status = document.getElementById("msg");
   status.value = "Creating Gift Card ... (please wait)";
-  // var walletAddress = document.getElementById("walletAddress").value;
-  // const currency = parseInt(document.getElementById("currency").value);
   var amount = document.getElementById("amount").value;
-  // amount = parseFloat(amount *10^18);
-  // amount = web3.utils.toWei(amount, 'ether');
-  // const total = parseInt(document.getElementById("total").value);
-
 
   const { GiftCardbBuyFee } = this.meta.methods;
   await GiftCardbBuyFee().send({ from: this.account, value: amount});
@@ -46,26 +38,19 @@ const App = {
 },
 
 transferGiftCardTo: async function() {
-  var status = document.getElementById("owner");
+  var status = document.getElementById("msg");
   status.value = "Transfer Gift Card ... (please wait)";
   var walletAddress = document.getElementById("walletAddress").value;
-  //const currency = parseInt(document.getElementById("currency").value);
-  // var cardId = parseInt(document.getElementById("cardId").value);
-  // const total = parseInt(document.getElementById("total").value);
-
 
   const { transferGiftCardTo } = this.meta.methods;
   await transferGiftCardTo(walletAddress).send({ from: this.account});
   status.innerHTML = "Transfer Gift Card complete!";
 },
+
 withdrawMerchantBalance: async function() {
-  var status = document.getElementById("owner");
+  var status = document.getElementById("msg");
   status.value = "Withdraw from Gift Card ... (please wait)";
   var withdrawAmount = document.getElementById("withdrawAmount").value;
-  //const currency = parseInt(document.getElementById("currency").value);
-  // var cardId = parseInt(document.getElementById("cardId").value);
-  // const total = parseInt(document.getElementById("total").value);
-
 
   const { withdrawMerchantBalance } = this.meta.methods;
   await withdrawMerchantBalance(withdrawAmount).send({from: this.account});
@@ -73,13 +58,9 @@ withdrawMerchantBalance: async function() {
 },
 
 GiftCardAddFee: async function() {
-  var status = document.getElementById("owner");
+  var status = document.getElementById("msg");
   status.value = "Add Funds to Gift Card ... (please wait)";
   var addAmount = document.getElementById("addAmount").value;
-  //const currency = parseInt(document.getElementById("currency").value);
-  // var cardId = parseInt(document.getElementById("cardId").value);
-  // const total = parseInt(document.getElementById("total").value);
-
 
   const { GiftCardAddFee } = this.meta.methods;
   await GiftCardAddFee(addAmount).send({from: this.account,value: addAmount});

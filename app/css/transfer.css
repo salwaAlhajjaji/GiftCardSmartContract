@@ -94,7 +94,6 @@ header .row .col-md-5 img {
 }
 
 header {
-
     background: #4b63a5;
     /* fallback for old browsers */
     background: var(--bggradient);
@@ -168,109 +167,4 @@ footer .column i+i {
     background: rgba(0, 0, 0, 0.815);
     z-index: 9999;
     transition: all 1.5s ease;
-}
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about{
- 
-    background: var(--bggradient);
-}
-
-.about .icon-boxes h2 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #fbfeff;
-    margin-bottom: 15px;
-    font-family: "Rubik",
-        sans-serif;
-
-}
-
-.about .icon-box {
-    margin-top: 40px;
-    
-
-}
-
-.about .icon-box .icon {
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 64px;
-    height: 64px;
-    border: 2px solid #d0ecf9;
-    border-radius: 50px;
-    transition: 0.5s;
-    
-
-}
-
-.about .icon-box .icon i {
-    color: #f7f8f8;
-    font-size: 32px;
-    
-
-}
-
-.about .icon-box:hover .icon {
-    background: #bd9cf1;
-    border-color: #bd9cf1;
-
-
-}
-
-.about .icon-box:hover .icon i {
-    color: #fff;
-
-}
-
-.about .icon-box .title {
-    margin-left: 85px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-size: 25px;
-    font-family: "Rubik",
-        sans-serif;
-
-}
-
-/*h3*/
-.about .icon-box .title a {
-    color: #f9fbfc;
-    transition: 0.3s;
-    font-family: "Rubik",
-        sans-serif;
-
-}
-
-.about .icon-box .title a:hover {
-    color: #bd9cf1;
-
-}
-
-.about .icon-box .description {
-    margin-left: 85px;
-    line-height: 24px;
-    font-size: 20px;
-    font-family: "Rubik",
-        sans-serif;
-
-
-}
-
-.about .video-box {
-    background: url("../assets/Untitleddesign_3.png") center center no-repeat;
-    background-size: cover;
-    min-height: 500px;
-    
-
-}
-
-.about .col-xl-7 {
-    font-family: "Rubik",
-        sans-serif;
-
 }
