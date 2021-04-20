@@ -79,4 +79,4 @@ Then in another terminal run the following command
 cd app
 npm run dev
 ```
-**Finally copy the localhost kink and paste it on web browser preferably google chrome.**
+**Finally copy the localhost link and paste it on web browser preferably google chrome.**
